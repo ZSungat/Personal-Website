@@ -111,6 +111,7 @@ class Star {
         if (config.colorMode) {
             this.hue = (this.hue + this.colorSpeed) % 1;
         }
+        this.velocity.z = config.speed * (0.8 + Math.random() * 0.4);
 
         this.z -= this.velocity.z;
         return true;
@@ -164,15 +165,15 @@ function update() {
     requestAnimationFrame(update);
 }
 
-const toggleButton = document.createElement('img');
-toggleButton.src = '../images/Dance.avif';
-toggleButton.className = 'toggle-button';
-
-toggleButton.addEventListener('click', () => {
-    config.colorMode = !config.colorMode;
-    toggleButton.classList.toggle('active');
-});
-
-document.body.appendChild(toggleButton);
+window.GalaxyStars = {
+    setSpeed: (speed) => {
+        config.speed = speed;
+    },
+    toggleColorMode: () => {
+        config.colorMode = !config.colorMode;
+        return config.colorMode;
+    },
+    getConfig: () => ({...config})
+};
 
 update();

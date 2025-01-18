@@ -1,0 +1,131 @@
+<body>
+    <div class="projects-container">
+        <button class="back-button" aria-label="Go back">
+            <i class="fas fa-arrow-left"></i> Back
+        </button>
+
+        <h1>My Projects</h1>
+        <div class="projects-content">
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h2>Project Name</h2>
+                    <div class="preview-content">
+                        <p>test </p>
+                    </div>
+                    <button class="see-more-btn">See More</button>
+
+                    <div class="project-details">
+                        <button class="close-details">
+                            <i class="fas fa-times"></i>
+                        </button>
+                        <h3>Project Name</h3>
+                        <p>test</p>
+                        <ul>
+                            <li>test</li>
+                            <li>test</li>
+                            <li>test</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#" class="github-link">View on GitHub</a>
+                            <a href="#" class="demo-link">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="project-card">
+                    <h2>Project Name</h2>
+                    <div class="preview-content">
+                        <p>test </p>
+                    </div>
+                    <button class="see-more-btn">See More</button>
+
+                    <div class="project-details">
+                        <button class="close-details">
+                            <i class="fas fa-times"></i>
+                        </button>
+                        <h3>Project Name</h3>
+                        <p>test</p>
+                        <ul>
+                            <li>test</li>
+                            <li>test</li>
+                            <li>test</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#" class="github-link">View on GitHub</a>
+                            <a href="#" class="demo-link">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="project-card">
+                    <h2>Project Name</h2>
+                    <div class="preview-content">
+                        <p>test </p>
+                    </div>
+                    <button class="see-more-btn">See More</button>
+
+                    <div class="project-details">
+                        <button class="close-details">
+                            <i class="fas fa-times"></i>
+                        </button>
+                        <h3>Project Name</h3>
+                        <p>test</p>
+                        <ul>
+                            <li>test</li>
+                            <li>test</li>
+                            <li>test</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#" class="github-link">View on GitHub</a>
+                            <a href="#" class="demo-link">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="project-card">
+                    <h2>Project Name</h2>
+                    <div class="preview-content">
+                        <p>test </p>
+                    </div>
+                    <button class="see-more-btn">See More</button>
+
+                    <div class="project-details">
+                        <button class="close-details">
+                            <i class="fas fa-times"></i>
+                        </button>
+                        <h3>Project Name</h3>
+                        <p>test</p>
+                        <ul>
+                            <li>test</li>
+                            <li>test</li>
+                            <li>test</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#" class="github-link">View on GitHub</a>
+                            <a href="#" class="demo-link">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.see-more-btn').forEach(button => {
+            button.addEventListener('click', (e) => {
+                const card = e.target.closest('.project-card');
+                card.classList.add('details-active');
+            });
+        });
+        document.querySelectorAll('.close-details').forEach(button => {
+            button.addEventListener('click', (e) => {
+                const card = e.target.closest('.project-card');
+                card.classList.remove('details-active');
+            });
+        });
+    </script>
+</body>

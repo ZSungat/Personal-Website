@@ -1,131 +1,229 @@
-<body>
-    <div class="projects-container">
-        <button class="back-button" aria-label="Go back">
-            <i class="fas fa-arrow-left"></i> Back
-        </button>
+<div class="projects-container">
+    <button class="back-button" aria-label="Go back">
+        <i class="fas fa-arrow-left"></i> Back
+    </button>
 
-        <h1>My Projects</h1>
-        <div class="projects-content">
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h2>Project Name</h2>
-                    <div class="preview-content">
-                        <p>test </p>
-                    </div>
-                    <button class="see-more-btn">See More</button>
+    <h1>My Projects</h1>
+    <div class="projects-content">
+        <div class="projects-grid">
 
-                    <div class="project-details">
-                        <button class="close-details">
-                            <i class="fas fa-times"></i>
-                        </button>
-                        <h3>Project Name</h3>
-                        <p>test</p>
+
+            <!-- Throttlestop Project -->
+            <div class="project-card">
+                <h2>Throttlestop TPL Automation</h2>
+                <div class="preview-content">
+                    <p>This project provides automation of ThrottleStop's Turbo Power Limits configuration/profiles,
+                        including PL1, PL2, and TTL adjustments, and integrates with Windows power plans.</p>
+                </div>
+                <button class="see-more-btn">See More</button>
+
+                <div class="project-details">
+                    <button class="close-details">
+                        <i class="fas fa-times"></i>
+                    </button>
+
+                    <div class="details-content">
+                        <h1>Throttlestop TPL Automation</h1>
+                        <p>
+                            This project provides a batch script to automate the configuration of ThrottleStop's TPL
+                            (Turbo Power Limits), including adjusting PL1, PL2, TTL (Turbo Time Limit), and other
+                            settings.
+                            It also integrates custom Windows power plans for enhanced CPU power management.
+                        </p>
+
+                        <h4>Features</h4>
                         <ul>
-                            <li>test</li>
-                            <li>test</li>
-                            <li>test</li>
+                            <li><strong>Profile Automation:</strong> Automatically switches ThrottleStop profiles based
+                                on user-defined
+                                arguments.</li>
+                            <li><strong>Advanced TPL Configuration:</strong> Customizes PL1, PL2, and TTL for fine-tuned
+                                CPU power
+                                control.</li>
+                            <li><strong>Windows Power Plan Integration:</strong> Applies matching Windows power plans to
+                                align with
+                                ThrottleStop profiles.</li>
+                            <li><strong>Backup:</strong> Creates the backup of the <u>ThrottleStop.ini</u> with initial
+                                user's unchanged
+                                settings <u>backup-ThrottleStop.ini</u>.
+                            </li>
+                            <li><strong>Clamping:</strong> Allows clamping of PL1 and PL2 values by appending "c" or "C"
+                                to the values.
+                            </li>
                         </ul>
+
+                        <h4>Requirements</h4>
+                        <ol>
+                            <li>Install <a
+                                    href="https://www.techpowerup.com/download/techpowerup-throttlestop/">ThrottleStop</a>
+                                and <a href="https://github.com/BartoszCichecki/LenovoLegionToolkit">Lenovo Legion
+                                    Toolkit</a> on your system.
+                                <ul style="padding-top: 10px;">
+                                    <li>Ensure you have the correct paths to <u>ThrottleStop.exe</u> and
+                                        <u>ThrottleStop.ini</u>.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>A basic understanding of your system's power and performance requirements.</li>
+                            <li><strong>Enable Start Minimized:</strong> For seamless starting/restarting of
+                                <u>ThrottleStop.exe</u>, ensure the <strong>"Start Minimized"</strong> option is
+                                checked in <strong>ThrottleStop -> Options -> Miscellaneous -> Start Minimized</strong>.
+                            </li>
+                        </ol>
+
+                        <h4>Installation</h4>
+                        <ol>
+                            <li>Clone this repository to your local machine:
+                                <br>
+                                <br>
+                                <u>
+                                    git clone https://github.com/ZSungat/ThrottlestopTPLAutomation.git
+                                </u>
+                            </li>
+                            <li>Download batch file from <a
+                                    href="https://github.com/ZSungat/ThrottlestopTPLAutomation/releases">Releases</a>
+                            </li>
+                            <li>Download from <a
+                                    href="https://github.com/ZSungat/ThrottlestopTPLAutomation/archive/refs/heads/main.zip">Direct
+                                    download
+                                    link</a></li>
+                            </li>
+                        </ol>
+
                         <div class="project-links">
-                            <a href="#" class="github-link">View on GitHub</a>
-                            <a href="#" class="demo-link">Live Demo</a>
+                            <a href="https://github.com/ZSungat/ThrottlestopTPLAutomation" class="github-link"
+                                TARGET="_blank">View on GitHub</a>
                         </div>
                     </div>
                 </div>
+            </div>
 
 
-                <div class="project-card">
-                    <h2>Project Name</h2>
-                    <div class="preview-content">
-                        <p>test </p>
-                    </div>
-                    <button class="see-more-btn">See More</button>
-
-                    <div class="project-details">
-                        <button class="close-details">
-                            <i class="fas fa-times"></i>
-                        </button>
-                        <h3>Project Name</h3>
-                        <p>test</p>
-                        <ul>
-                            <li>test</li>
-                            <li>test</li>
-                            <li>test</li>
-                        </ul>
-                        <div class="project-links">
-                            <a href="#" class="github-link">View on GitHub</a>
-                            <a href="#" class="demo-link">Live Demo</a>
-                        </div>
-                    </div>
+            <!-- Lost Survivors | High School Diploma Project -->
+            <div class="project-card">
+                <h2>Lost Survivors | High School Diploma Project</h2>
+                <div class="preview-content">
+                    <p>This project is a small 2D roguelike survival game developed in Unity using C#. It is designed
+                        for a wide audience, including hardcore gamers, survival fans, and casual players.This Project
+                        took the inspirations from the popular game <strong>Vamparie Survivors</strong>.
+                    </p>
                 </div>
+                <button class="see-more-btn">See More</button>
 
+                <div class="project-details">
+                    <button class="close-details">
+                        <i class="fas fa-times"></i>
+                    </button>
 
-                <div class="project-card">
-                    <h2>Project Name</h2>
-                    <div class="preview-content">
-                        <p>test </p>
-                    </div>
-                    <button class="see-more-btn">See More</button>
-
-                    <div class="project-details">
-                        <button class="close-details">
-                            <i class="fas fa-times"></i>
-                        </button>
-                        <h3>Project Name</h3>
-                        <p>test</p>
+                    <div class="details-content">
+                        <h1>Lost Survivors | High School Diploma Project</h1>
+                        <p>
+                            This project is a small 2D roguelike survival game developed in Unity using C#. It is
+                            designed for a wide audience, including hardcore gamers, survival fans, and casual players.
+                            This project took inspiration from the popular game Vampire Survivors.
+                        </p>
+                        <p>
+                            Toward the end of my high education, I chose the theme of my diploma project, which was "2D
+                            Game Development". Making this project as a solo developer was quite hard, interesting
+                            and fun.This project was made in C# using Unity 2D Game Engine.
+                        </p>
+                        <p>
+                            The game design mirrors elements from Vampire Survivors, focusing on delivering a unique and
+                            challenging experience. The development process involved using Unity's features to implement
+                            collision physics, interaction animations, and real-time algorithm optimization. Throughout
+                            the development, I explored into advanced techniques within the Unity environment. This
+                            included:
+                        </p>
                         <ul>
-                            <li>test</li>
-                            <li>test</li>
-                            <li>test</li>
+                            <li>
+                                <strong>Developing scripts for player and enemy behavior:</strong> Implementing game
+                                logic, interactions, and character actions
+                            </li>
+                            <li>
+                                <strong>Optimizing performance for various platforms:</strong> Ensuring smooth gameplay
+                                across different devices.
+                            </li>
+                            <li>
+                                <strong>Incorporating health systems, damage calculations, and visual effects: </strong>
+                                Enhancing gameplay with dynamic elements.
+                            </li>
                         </ul>
+
+
+                        <p>
+                            In this 2D survival game, you begin each run equipped with a randomly assigned weapon. Your
+                            goal is to
+                            withstand relentless waves of enemies swarming toward you. Defeating enemies rewards you
+                            with experience points and,
+                            with a 50% chance, coins. The experience you gather allows you to level up, unlocking
+                            opportunity to access the upgrade panel, where you can enhance your
+                            survival abilities.To improve your survival experience you need to spend coins:
+                        </p>
+                        <ul>
+                            <li>
+                                <strong>Weapon upgrades:</strong> Boost the power and efficiency of your current weapon, making it deadlier against stronger enemies.
+                            </li>
+                            <li>
+                                <strong>New weapons:</strong> Add more weapons without replacing your current weapon, giving you versatile options for dealing with
+                                enemies.
+                            </li>
+                            <li>
+                                <strong>Player stat enhancements:</strong>
+                                Strengthen your character with increased health, speed, or other attributes to endure tougher challenges.
+                            </li>
+                        </ul>
+
+                        <h4>Survive as long as possible!</h4>
+
+                        <p>The game currently has no definitive ending. Each attempt is a time-based challenge where your survival duration becomes a score you can share with friends
+                        and competitors. Compare your best times and strive to beat their records!</p>
+                        <p>
+                            Making this game was really hard! It took a lot of time and effort, and I made many mistakes
+                            along the way. Sometimes, I
+                            even had to start over completely multiple times. But each time I did, I learned something
+                            new and made the game better.
+                        </p>
+                        <p>
+                            In the end, this project was made me learn how to make games and how hard it is. It was a
+                            fun way to learn about game development and improve my skills. Now, the
+                            game is available for people to play on computers and Android phones.
+                        </p>
+                        <h3 style="color: white;">Installation</h3>
+                        <ul>
+                            <li>Play the game through <a href="/Lost Survivors" class="demo-link">Live embeded
+                                    Game</a></li>
+                            <li>Download installer from <a href="https://github.com/ZSungat/Rogue-like-Game">Github
+                                    Releases</a>
+                            </li>
+                            <li>Download through Direct link:
+                                <ul>
+                                    <br>
+                                    <li>PC installer: <a
+                                            href="https://github.com/ZSungat/Rogue-like-Game/releases/download/v0.6.0-Alpha/Rouge-like.Game.v0.6.0.PreAlpha.exe">Downlaod</a>
+                                    </li>
+                                    <li>Android APK: <a
+                                            href="https://github.com/ZSungat/Rogue-like-Game/releases/download/v0.6.0-Alpha/Rouge-like.Game.v0.6.0.PreAlpha.apk">Downlaod</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
                         <div class="project-links">
-                            <a href="#" class="github-link">View on GitHub</a>
-                            <a href="#" class="demo-link">Live Demo</a>
+                            <a href="https://github.com/ZSungat/Rogue-like-Game" class="github-link">View on GitHub</a>
+                            <a href="/Lost Survivors" class="demo-link">Play Game</a>
                         </div>
                     </div>
-                </div>
 
-
-                <div class="project-card">
-                    <h2>Project Name</h2>
-                    <div class="preview-content">
-                        <p>test </p>
-                    </div>
-                    <button class="see-more-btn">See More</button>
-
-                    <div class="project-details">
-                        <button class="close-details">
-                            <i class="fas fa-times"></i>
-                        </button>
-                        <h3>Project Name</h3>
-                        <p>test</p>
-                        <ul>
-                            <li>test</li>
-                            <li>test</li>
-                            <li>test</li>
-                        </ul>
-                        <div class="project-links">
-                            <a href="#" class="github-link">View on GitHub</a>
-                            <a href="#" class="demo-link">Live Demo</a>
-                        </div>
+                    <div class="details-images">
+                        <img src="../images/Choosing the Platform.png"
+                            alt="Project | Lost Survivors, Platform Choice" />
+                        <img src="../images/Main Menu.png" alt="Project | Lost Survivors, Main Menu" />
+                        <img src="../images/Gameplay.png" alt="Project | Lost Survivors, Game Play" />
+                        <img src="../images/Upgrades.png" alt="Project | Lost Survivors, Upgrades" />
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    </div>
+</div>
 
-    <script>
-        document.querySelectorAll('.see-more-btn').forEach(button => {
-            button.addEventListener('click', (e) => {
-                const card = e.target.closest('.project-card');
-                card.classList.add('details-active');
-            });
-        });
-        document.querySelectorAll('.close-details').forEach(button => {
-            button.addEventListener('click', (e) => {
-                const card = e.target.closest('.project-card');
-                card.classList.remove('details-active');
-            });
-        });
-    </script>
-</body>
+<script src="../scripts/projects.js"></script>

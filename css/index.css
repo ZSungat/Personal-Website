@@ -21,14 +21,14 @@ body, html {
     transform: translate(-50%, -50%) scale(1);
     text-align: center;
     z-index: 1;
-    transition: all 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
     width: min(90vw, 1200px);
     padding: clamp(1rem, 3vw, 2rem);
+    opacity: 1;
 }
 
 h1 {
     color: #00FFFF;
-    font-size: clamp(2rem, 5vw, 3.5rem);
     margin-bottom: clamp(0.5rem, 2vw, 1rem);
     text-shadow: 0 0 10px rgba(255,255,255,0.5);
 }
@@ -73,7 +73,59 @@ h1 {
 }
 
 .content.zoom-out {
-    transform: translate(-50%, -50%) scale(2);
+    transform: translate(-50%, -50%) scale(0.8);
     opacity: 0;
     pointer-events: none;
+}
+
+.projects-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+    opacity: 0;
+    pointer-events: none;
+    width: min(90vw, 1200px);
+    height: min(90vh, 800px);
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.projects-container.zoom-in {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.projects-container.zoom-out {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.projects-content {
+    overflow-y: auto;
+    max-height: 100%;
+    padding: 10px;
+}
+
+.back-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.back-button:hover {
+    background: rgba(255, 255, 255, 0.2);
 }

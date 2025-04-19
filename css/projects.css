@@ -1,6 +1,5 @@
 .projects-container {
     position: fixed;
-    inset: 0;
     margin: auto;
     background: rgba(0, 0, 0, 0.9);
     padding: 2rem;
@@ -253,7 +252,7 @@
 
 
 
-@media (max-width: 1200px) {
+@media (max-width: 600px) {
     .project-card.expanded .project-details {
         grid-template-columns: 1fr;
     }
